@@ -1,0 +1,44 @@
+@import '../../styles/Variables';
+
+.container {
+    margin-top: -1rem;
+
+    padding: 0.5rem;
+    padding-top: 2rem;
+
+    color: rgba(#FFF, 0.8);
+
+    flex-direction: column;
+    display: flex;
+
+    background-color: $dark-blue;
+
+    border-radius: $border-radius;
+
+    button {
+        transition: all 0.3s ease-in-out;
+
+        background-color: transparent;
+
+        border: none;
+        border-radius: $border-radius;
+
+        font-size: 0.7rem;
+        color: rgba(#FFF, 0.3);
+        text-align: left;
+
+        padding: 0.5rem;
+
+
+        &:hover {
+            cursor: pointer;
+            
+            color: #FFF;
+            background-color: rgba($pale-blue, 0.1);
+        }
+    }
+
+    button.highlight {
+        color: #FFF;
+    }
+}

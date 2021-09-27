@@ -1,0 +1,86 @@
+@import '../../styles/Variables';
+
+:export {
+    workBgColor:     $work-bg-color;     
+    playBgColor:     $play-bg-color;     
+    studyBgColor:    $study-bg-color;    
+    exerciseBgColor: $exercise-bg-color; 
+    socialBgColor:   $social-bg-color;   
+    selfCareBgColor: $self-care-bg-color;
+}
+
+.background {
+    position: relative;
+
+    border-radius: $border-radius;
+
+    min-width: 150px;
+
+    div.backgroundImage {
+        svg {
+            position: absolute;
+            right: 0;
+            top: 0;
+    
+            z-index: 0;
+        }
+    }
+    
+}
+
+.container {
+    transition: all 0.3s ease;
+
+    flex-direction: column;
+    display: flex;
+    
+    border-radius: $border-radius;
+
+    padding: 1rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: -1px;
+
+    background-color: $dark-blue;
+
+    position: relative;
+
+    z-index: 1;
+
+    &:hover {
+        background-color: rgba($dark-blue, 0.9);
+        filter: brightness(150%);
+
+        margin-top: 1rem;
+        
+
+        cursor: pointer;
+    }
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    font-size: $card-title-font-size;
+    color: #FFF;
+}
+
+.headerTitle {
+    font-size: 0.9rem;
+}
+
+.content {
+    margin-top: 1rem;
+
+    font-weight: $font-weight-light;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.subContent {
+    font-size: 0.9rem;
+
+    color: rgba(#FFF, 0.5);
+}

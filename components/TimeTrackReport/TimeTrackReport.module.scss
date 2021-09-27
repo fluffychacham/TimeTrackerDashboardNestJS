@@ -1,0 +1,18 @@
+
+.container {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.rightContent {
+    flex-wrap: wrap;
+    display: flex;
+    flex-basis: 45%;
+    gap: 1rem;
+}
+
+.leftContent {
+    margin-right: 1rem;
+}

@@ -1,0 +1,51 @@
+@import '../../styles/Variables';
+
+.container {
+    flex-direction: column;
+    display: flex;
+
+    background-color: $blue;
+
+    border-radius: $border-radius;
+    
+    padding: 1rem;
+}
+
+.userProfileInfo {
+
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+
+    div.reportForText {
+        font-size: 0.8rem;
+        color: rgba(#FFF, 0.5);
+    }
+    div.reportName {
+        font-size: 1.8rem;
+        color: rgba(#FFF, 0.8);
+        line-height: 1.8rem;
+    }
+}
+
+.userProfileImage {
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid #FFF;
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+    color: #FFF;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    img {
+        width: 30px;
+    }
+}
